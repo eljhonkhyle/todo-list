@@ -1,12 +1,17 @@
 import './App.css'
-import TodoForm from './components/TodoForm'
+import Header from './Header'
+import TodoWrapper from './components/TodoWrapper'
 
 function App() {
   
 
   return (
     <>
-    <TodoForm/>
+    <Header />
+    
+    <div className='App'>
+    <TodoWrapper />
+    </div>
     </>
     
   )
