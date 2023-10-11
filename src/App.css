@@ -35,6 +35,8 @@ h1 {
   color: #FCFCFA;
   margin-bottom: 1rem;
   font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
 }
 
 .todo-wrapper {
@@ -105,4 +107,3 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
- 
