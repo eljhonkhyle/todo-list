@@ -22,13 +22,13 @@ body {
 
 .header {
   margin-top: 2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .logo {
-  margin-left: 4rem;
+  margin-left: 3.5rem;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
   background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .todo-form {
@@ -67,6 +67,19 @@ h1 {
   color: #ffffff4d;
 }
 
+.todo input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the margin to control the spacing */
+}
+
+.todo input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #1A1A40 ;
+  background: #1A1A40 ;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .todo-btn {
   background: #8758ff;
   color: #fff;
@@ -75,6 +88,18 @@ h1 {
   cursor: pointer;
   border-radius: 5px;
   margin-left: 5px;
+}
+
+.update-btn{
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 78px;
+  
 }
 
 .todo {
@@ -107,3 +132,60 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container {
+  padding: 2em 5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #1A1A40;
+  border-top: 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.footer__title,
+.footer__link {
+    color: #FCFCFA;
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer__copy {
+  display: block;
+  margin-top: 2.5rem;
+  color: var(--title-color);
+  text-align: center;
+  font-size: 0.813rem;
+}
+
+@media screen and (max-width: 576px) {
+    .todo-wrapper {
+      margin-top: 2rem;
+      background: none;
+    }
+
+    .todo-btn{
+     display: flex;
+     margin-left: 110px;
+    }
+
+    .update-btn{
+      display: flex;
+      margin-left: 110px;
+      justify-content: center;
+    }
+}
+
+.footer__container.scrolled {
+  transform: translateY(-30px);
+}
+

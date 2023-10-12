@@ -1,6 +1,8 @@
 import './App.css'
 import Header from './Header'
-import TodoWrapper from './components/TodoWrapper'
+import Footer from './components/Footer'
+import TodoContainer from './components/TodoContainer'
+
 
 function App() {
   
@@ -8,10 +10,13 @@ function App() {
   return (
     <>
     <Header />
-    
+
     <div className='App'>
-    <TodoWrapper />
+    <TodoContainer />
+    
     </div>
+
+    <Footer />
     </>
     
   )
