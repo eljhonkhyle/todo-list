@@ -69,16 +69,17 @@ h1 {
 }
 
 .todo input[type="checkbox"] {
-  margin-right: 10px; /* Adjust the margin to control the spacing */
+  margin-right: 10px; /*
+  ac Adjust the margin to control the spacing */
 }
 
 .todo input[type="checkbox"] {
   width: 15px;
   height: 15px;
-  border: 1px solid #1A1A40 ;
-  background: #1A1A40 ;
+  border: 1px solid #1A1A40;
   border-radius: 3px;
   cursor: pointer;
+  accent-color: #1A1A40;
 }
 
 .todo-btn {
@@ -169,6 +170,11 @@ h1 {
 }
 
 @media screen and (max-width: 576px) {
+
+    .logo{
+      margin-left: 50px;
+    }
+
     .todo-wrapper {
       margin-top: 2rem;
       background: none;
