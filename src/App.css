@@ -14,7 +14,62 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  
 }
+
+/* Default (light) mode */
+body {
+  background-color: #F0F0F5;
+  color: #432C7F;
+  transition: 1s;
+ 
+}
+
+body .logo {
+  color: #432C7F;
+}
+
+body.dark-mode .logo {
+  color: #FCFCFA;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #0d1117;
+  color: #FFFFFF;
+  transition: 1s;
+}
+
+body .footer__title {
+  color: #432C7F;
+}
+
+body.dark-mode .footer__title {
+  color: #FCFCFA;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  right: 3rem;
+  top: 4.5rem;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+ background-color: #E2E2E1;
+ color: #432C7F;
+ border-radius: 3px;
+ display: flex;
+ transition: 1s;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: #1A1A40;
+  color: #fff;
+  border-radius: 3px;
+  display: flex;
+  transition: 1s;
+ }
 
 .App {
   align-items: center;
@@ -183,6 +238,59 @@ h1 {
       margin-top: 2rem;
       background: none;
     }
+
+    .todo-wrapper h1 {
+      color: #432C7F;
+    }
+
+    body.dark-mode .todo-wrapper h1 {
+      color: #FCFCFA;
+    }
+
+    .todo-input {
+      border-color: #5e3db2;
+      color: #1A1A40;
+    }
+
+    body.dark-mode .todo-input {
+      border-color:  #8758ff;
+      color: #FCFCFA;
+      
+    }
+
+    .todo {
+      background-color: #5e3db2;
+    }
+
+    body.dark-mode .todo{
+      background-color: #8758ff;
+    }
+
+    .todo-btn{
+      background-color: #5e3db2;
+    }
+
+    body.dark-mode .todo-btn{
+      background-color: #8758ff;
+    }
+
+    .update-btn{
+      background-color: #5e3db2;
+    }
+
+    body.dark-mode .update-btn{
+      background-color: #8758ff;
+    }
+
+    .todo-input::placeholder {
+      color: #c9c9c8;
+    }
+
+
+    body.dark-mode .todo-input::placeholder {
+      color:#ffffff4d;
+    }
+
 
 }
 
