@@ -47,23 +47,6 @@ h1 {
   border-radius: 6px;
 }
 
-.todo-form {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.todo-input {
-  outline: none;
-  background: none;
-  border: 1px solid #8758ff;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 300px;
-  color: #fff;
-  border-radius: 5px;
-}
-
 .todo-input::placeholder {
   color: #ffffff4d;
 }
@@ -82,6 +65,27 @@ h1 {
   accent-color: #1A1A40;
 }
 
+.todo-form {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Center text */
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Reduce the margin to keep elements closer */
+  width: 300px;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .todo-btn {
   background: #8758ff;
   color: #fff;
@@ -90,9 +94,11 @@ h1 {
   cursor: pointer;
   border-radius: 5px;
   margin-left: 5px;
+  margin-bottom: 2rem; /* Increase margin to add more space below the button */
+  margin-top: 1rem;
 }
 
-.update-btn{
+.update-btn {
   background: #8758ff;
   color: #fff;
   border: none;
@@ -101,8 +107,10 @@ h1 {
   border-radius: 5px;
   margin-left: 5px;
   width: 78px;
-  
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
+
 
 .todo {
   display: flex;
@@ -143,16 +151,12 @@ h1 {
 
 .footer__container {
   padding: 2em 5rem;
-  position: fixed;
   bottom: 0;
-  left: 0;
-  background-color: #1A1A40;
   border-top: 1px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  margin-top: 5rem;
 }
 
-.footer__title,
-.footer__link {
+.footer__title {
     color: #FCFCFA;
 }
 
@@ -180,16 +184,6 @@ h1 {
       background: none;
     }
 
-    .todo-btn{
-     display: flex;
-     margin-left: 110px;
-    }
-
-    .update-btn{
-      display: flex;
-      margin-left: 110px;
-      justify-content: center;
-    }
 }
 
 .footer__container.scrolled {
