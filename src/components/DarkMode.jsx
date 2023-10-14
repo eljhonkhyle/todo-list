@@ -8,10 +8,10 @@ import { Sun, Moon } from 'react-feather';
 const DarkMode = () => {
 
     const iconStyle = {
-        width: '20px',  // Adjust the size as needed
-        height: '20px', // Adjust the size as needed
+        width: '20px',  //
+        height: '20px', //
       };
-      
+
   // Initialize the dark mode state with the stored value or the default
   const [isDarkMode, setDarkMode] = useState(() => {
     // Check if there's a stored value for dark mode
