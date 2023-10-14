@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
-  const [selected, setSelected] = useState(false);
+  const [selected, setSelected] = useState(task.completed);
 
   const handleCheckboxChange = () => {
     setSelected(!selected);
+    toggleComplete(task.id);
   };
 
   const handleDeleteClick = (event) => {
@@ -22,13 +23,14 @@ const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
         type="checkbox"
         checked={selected}
         onChange={handleCheckboxChange}
+        className={`${task.completed ? 'completed' : ''}`}
       />
-      <p onClick={() => toggleComplete(task.id)} className={`${task.completed ? 'completed' : ''}`}>
+      <p className={`${task.completed ? 'completed' : 'incompleted'}`}>
         {task.task}
       </p>
       <div>
         <FontAwesomeIcon className='edit-icon' onClick={() => editTodo(task.id)} icon={faPenToSquare} />
-        <FontAwesomeIcon className='delete-icon' key={handleDeleteClick} onClick={() => deleteTodo(task.id)} icon={faTrash} />
+        <FontAwesomeIcon className='delete-icon' onClick={() => deleteTodo(task.id)} icon={faTrash} />
       </div>
     </div>
   );
