@@ -47,7 +47,6 @@ const DarkMode = () => {
         {isDarkMode ? <Sun style={iconStyle}/> : <Moon style={iconStyle} />}
         <span className="mode-label">{isDarkMode ? '' : ''}</span>
       </div>
-      <Header />
     </div>
   );
 };

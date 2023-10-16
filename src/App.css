@@ -50,6 +50,7 @@ body.dark-mode .footer__title {
 
 .dark-mode-toggle {
   position: absolute;
+  margin-right: 170px;
   right: 3rem;
   top: 4.5rem;
   cursor: pointer;
@@ -243,6 +244,10 @@ h1 {
       color: #432C7F;
     }
 
+    .dark-mode-toggle {
+      margin-right: 1rem;
+    }
+
     body.dark-mode .todo-wrapper h1 {
       color: #FCFCFA;
     }
@@ -285,7 +290,6 @@ h1 {
     .todo-input::placeholder {
       color: #c9c9c8;
     }
-
 
     body.dark-mode .todo-input::placeholder {
       color:#ffffff4d;
