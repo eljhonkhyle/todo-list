@@ -141,13 +141,17 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 1px solid #432C7F ;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem; /* Reduce the margin to keep elements closer */
   width: 300px;
   color: #fff;
   border-radius: 5px;
+}
+
+.todo-input:focus {
+  border: 1px solid #8758ff;
 }
 
 .todo-btn {

@@ -27,7 +27,7 @@ const TodoForm = ({ addTodo }) => {
           id="item"
           type="text"
           className="todo-input"
-          placeholder="e.g. Doing Homework"
+          placeholder="e.g. Go to work"
         />
         {error && <p className="error-message">{error}</p>}
         <button type="submit" className="todo-btn">
