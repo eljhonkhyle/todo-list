@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 
 const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState('');
-  const [error, setError] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (value.trim() === '') {
-      setError('Please enter a task before adding.');
+      setErrorMessage('Please enter a task before adding.');
       return;
     }
 
     addTodo(value);
 
     setValue('');
-    setError('');
+    setErrorMessage('');
   };
 
   return (
@@ -29,7 +29,7 @@ const TodoForm = ({ addTodo }) => {
           className="todo-input"
           placeholder="e.g. Go to work"
         />
-        {error && <p className="error-message">{error}</p>}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button type="submit" className="todo-btn">
           Add Task
         </button>

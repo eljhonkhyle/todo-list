@@ -8,6 +8,7 @@ const TodoContainer = () => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
+    
     // Load todos from local storage when the component mounts
     const storedTodos = localStorage.getItem('todos');
     if (storedTodos) {

@@ -133,7 +133,7 @@ h1 {
 .error-message {
   margin-top: -1rem;
   margin-bottom: 1rem;
-  color: red; /* Set the text color to red or your preferred color */
+  color: red; 
   font-size: 14px; /* Adjust the font size as needed *//* Position at the left edge of the parent container */
   transform: translateY(100%); /* Move it just below the input field */
 }
