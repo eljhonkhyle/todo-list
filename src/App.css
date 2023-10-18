@@ -101,6 +101,8 @@ h1 {
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 6px;
+  overflow-y: scroll;
+  max-width: 600px;
 }
 
 .todo-input::placeholder {
@@ -189,6 +191,10 @@ h1 {
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .fa-trash {
@@ -209,6 +215,7 @@ h1 {
 .edit-icon,
 .delete-icon {
   cursor: pointer;
+  
 }
 
 .footer {
@@ -265,6 +272,15 @@ h1 {
 }
 
 @media screen and (max-width: 576px) {
+
+
+     h1 {
+    font-size: 1.5rem;
+    }
+
+    .todo-input {
+      font-size: 14px;
+    }
 
     .logo{
       margin-left: 50px;
@@ -335,5 +351,32 @@ h1 {
 
 .footer__container.scrolled {
   transform: translateY(-30px);
+}
+
+
+@media screen and (max-width: 373px) {
+  /* Add your responsive styles for 373px here */
+  .logo {
+    margin-left: 30px; /* Adjust the margin for the logo as needed */
+  }
+
+  .dark-mode-toggle {
+    margin-right: 0.5rem; /* Adjust the margin for the dark mode toggle as needed */
+  }
+
+  h1 {
+    font-size: 1.25rem; /* Adjust the font size for h1 as needed */
+  }
+
+  .todo-input {
+    font-size: 12px; /* Adjust the font size for the todo input as needed */
+    width: 250px; /* Adjust the width of the todo input as needed */
+  }
+
+  .todo-wrapper {
+    margin-top: 1rem; /* Adjust the margin-top for the todo wrapper as needed */
+  }
+
+  /* Add other responsive styles for 373px as needed */
 }
 
