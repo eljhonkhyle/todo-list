@@ -81,11 +81,18 @@ body.dark-mode .dark-mode-toggle:hover {
   position: absolute;
   top: 0;
   left: 0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
-  margin-left: 170px;
-  margin-top: 2rem;
+  margin-right: 180px;
+  margin-top: 1rem;
 }
 
 h1 {
@@ -98,10 +105,11 @@ h1 {
 
 .todo-wrapper {
   background: #1A1A40;
-  margin-top: 5rem;
+  margin-top: 150px;
   padding: 2rem;
   border-radius: 6px;
   max-width: 600px;
+  
 }
 
 .todo-input::placeholder {
