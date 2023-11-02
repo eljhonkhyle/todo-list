@@ -91,9 +91,11 @@ body.dark-mode .dark-mode-toggle:hover {
 }
 
 .logo {
-  margin-right: 200px;
-  margin-top: 1rem;
+  position: absolute;
+  top: 4.5rem;
+  left: 3rem;
   font-size: 1.5rem;
+  margin-left: 170px;
 }
 
 h1 {
@@ -280,12 +282,34 @@ h1 {
   font-size: 1.5rem;
 }
 
+.welcome-input::placeholder{
+  color: #ffffff4d;
+}
+
+
 .welcome-text {
   color: #fff;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
 }
+
+body .welcome-input::placeholder{
+  color: #0000004d;
+}
+
+body.dark-mode .welcome-input::placeholder{
+  color: #ffffff4d;
+}
+
+body .welcome-text {
+  color: #432C7F;
+}
+
+body.dark-mode .welcome-text {
+  color: #fff;
+}
+
 
 @media screen and (max-width: 992px) {
   
@@ -332,7 +356,7 @@ h1 {
     }
 
     .logo{
-      margin-left: 50px;
+      margin-left: 1rem;
     }
 
     .todo-wrapper {
@@ -418,7 +442,8 @@ h1 {
 @media screen and (max-width: 373px) {
   /* Add your responsive styles for 373px here */
   .logo {
-    margin-left: 30px; /* Adjust the margin for the logo as needed */
+    margin-left: 10px;
+    font-size: 1.25rem; /* Adjust the margin for the logo as needed */
   }
 
   .dark-mode-toggle {
