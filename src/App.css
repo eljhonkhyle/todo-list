@@ -120,8 +120,7 @@ h1 {
 }
 
 .todo input[type="checkbox"] {
-  margin-right: 10px; /*
-  ac Adjust the margin to control the spacing */
+  margin-right: 10px;
 }
 
 .todo input[type="checkbox"] {
@@ -139,15 +138,15 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; /* Center text */
+  text-align: center;
 }
 
 .error-message {
   margin-top: -1rem;
   margin-bottom: 1rem;
   color: red; 
-  font-size: 14px; /* Adjust the font size as needed *//* Position at the left edge of the parent container */
-  transform: translateY(100%); /* Move it just below the input field */
+  font-size: 14px; 
+  transform: translateY(100%); 
 }
 
 .todo-input {
@@ -156,7 +155,7 @@ h1 {
   border: 1px solid #432C7F ;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  margin-bottom: 1rem; /* Reduce the margin to keep elements closer */
+  margin-bottom: 1rem;
   width: 300px;
   color: #fff;
   border-radius: 5px;
@@ -174,7 +173,7 @@ h1 {
   cursor: pointer;
   border-radius: 5px;
   margin-left: 5px;
-  margin-bottom: 2rem; /* Increase margin to add more space below the button */
+  margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
@@ -263,7 +262,6 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 2rem;
 }
 
 .inline-container {
@@ -272,14 +270,16 @@ h1 {
 }
 
 .welcome-input {
+  text-align: center;
   border: none;
   border-bottom: none;
   outline: none;
   background: none;
   color: #8758ff;
-  width: 200px;
-  padding: 1rem;
+  width: 150px;
+  margin-left: 2rem;
   font-size: 1.5rem;
+
 }
 
 .welcome-input::placeholder{
@@ -440,27 +440,26 @@ body.dark-mode .welcome-text {
 
 
 @media screen and (max-width: 373px) {
-  /* Add your responsive styles for 373px here */
   .logo {
     margin-left: 10px;
-    font-size: 1.25rem; /* Adjust the margin for the logo as needed */
+    font-size: 1.25rem; 
   }
 
   .dark-mode-toggle {
-    margin-right: 0.5rem; /* Adjust the margin for the dark mode toggle as needed */
+    margin-right: 0.5rem; 
   }
 
   h1 {
-    font-size: 1.25rem; /* Adjust the font size for h1 as needed */
+    font-size: 1.25rem; 
   }
 
   .todo-input {
-    font-size: 12px; /* Adjust the font size for the todo input as needed */
-    width: 250px; /* Adjust the width of the todo input as needed */
+    font-size: 12px; 
+    width: 250px;
   }
 
   .todo-wrapper {
-    margin-top: 1rem; /* Adjust the margin-top for the todo wrapper as needed */
+    margin-top: 1rem; 
   }
 
   .welcome-input {
